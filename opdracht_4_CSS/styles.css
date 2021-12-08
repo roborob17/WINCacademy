@@ -1,0 +1,22 @@
+body {
+    color: red;
+
+}
+.black-border {
+    border: 5px solid black;
+}
+#green-background {
+    background-color: green;
+}
+.text-color {
+    color:cornflowerblue
+}
+.text-size {
+    size: 14px;
+}
+.text-font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+text-font2 {
+    font-style: oblique;
+}
