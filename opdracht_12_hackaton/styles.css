@@ -1,0 +1,247 @@
+/******************************************************************************/
+
+
+/* Colors, general, non-text */
+
+body {
+    background-color: #d8ddf5;
+}
+
+header div {
+    background-color: rgb(30, 134, 219);
+}
+
+
+/******************************************************************************/
+
+
+/* Typography: colors */
+
+body {
+    color: #9d8189;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: rgb(0, 60, 255);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+a {
+    color: hsl(213, 36%, 32%);
+}
+
+
+/******************************************************************************/
+
+
+/* Typography: sizes */
+
+html {
+    font-size: 70%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+header nav {
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+
+/******************************************************************************/
+
+
+/* Element styling: non-layout */
+
+header div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(201, 137, 42);
+}
+
+img {
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+header li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(216, 129, 30);
+    text-align: center;
+}
+
+header li.last {
+    border-bottom-width: 0px;
+}
+
+footer {
+    border-top: 1px solid rgb(201, 137, 42);
+    padding-top: 1rem;
+}
+
+footer div {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+footer li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+/******************************************************************************/
+
+
+/* Layout */
+
+
+/* Less margin and padding on narrow screen */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Consistent sizing of elements */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+margin: 10px
+
+}
+
+header ul {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+header nav li {
+    margin-bottom: 0.2rem;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+img {
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+
+main h2 {
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    margin-bottom: 0.5rem;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+
+/* Breakpoints */
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #a0d2fa;
+        color: #111111;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    main {
+        margin: 0 20%;
+    }
+    header h1 {
+        font-size: 5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    header nav li {
+        font-size: 3.5rem;
+        display: inline;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom-width: 0;
+        margin-right: 2rem;
+        border: 3px solid rgb(236, 139, 60);
+        border-radius: 0.5rem;
+        padding: 0.5rem 3rem;
+    }
+    header nav li.last {
+        border-bottom-width: 3px;
+    }
+    img {
+        width: 40%;
+        float: right;
+        margin-left: 3rem;
+    }
+    footer nav li {
+        display: inline;
+    }
+    footer nav {
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-color: #e3eaf0;
+        color: #26571a;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    main {
+        margin: 0 20%;
+    }
+    img {
+        width: 60%;
+        float: right;
+        margin-left: 3rem;
+    }
+}
