@@ -1,0 +1,120 @@
+@import "./constants";
+
+body {
+  color: $color-black;
+  margin: 10px;
+  background-color: $color-gray;
+}
+
+h1 {
+    color: $color-black;
+    font-family: "Oswald";
+    font-weight: 700;
+    position: relative;
+    margin: 20px auto;
+}
+
+article {
+    @include standard-text;
+    height: 350px;
+    width: 400px;
+    display: block;
+    margin: 40px 40px 0px 40px;
+    padding: 50px;
+    background-color: $color-white;
+    box-shadow: 5px 5px 15px 2px gray;
+    border-radius: 40px 40px 0px 0px;
+}
+
+article-footer {
+    @include footer-text;
+    height:150px;
+    width: 400px;
+    display: block;
+    margin:  0px 40px 40px 40px;
+    padding: 50px;
+    background-color: $color-purple-blue;
+    box-shadow: 5px 5px 15px 2px gray;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.img-testimonial {
+    width: 150px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 30%;
+    margin-top: 20%;
+    border-radius: 90px; 
+    }
+
+.container {
+        position: relative;
+        width: 75%;
+      }
+.image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+.middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+.container:hover .image {
+        opacity: 0.3;
+      }
+      
+.container:hover .middle {
+        opacity: 1;
+      }
+      
+.text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+
+
+  @media only screen and (max-width: 767px) {
+    
+         
+     article {
+        @include small-text;
+         width: 300px;
+     }
+     article-footer{
+       @include footer-small-text;
+       width: 300px;
+  }
+  h2 {
+        font-size: 15px;
+  }
+  .img-testimonial {
+    width: 150px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 10%;
+    margin-top: 55%;
+    border-radius: 90px; 
+    }
+
+   
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+  }
+}
