@@ -1,0 +1,78 @@
+            /*body*/
+                   
+              .body {
+                background-color: grey;
+            }
+            
+            /*ul*/
+            
+            .menuColor {
+                list-style-type: none;
+                display: none;
+                width: 220px;
+                height: 280px;
+                /*transition: width 100s;*/
+                /*transform: translateX(220px);*/
+                
+            }
+            
+            li {
+                width: 250px;
+                height: 50px;
+                border: 1px solid grey;
+            }
+            
+            .visible {
+                display: block;
+                /*transition: width 10s ease;*/
+                width: 220px;
+                height: 280px;
+            }
+            
+            /*styling for buttons*/
+            
+            .home-grey {
+                color: black;
+                background-color: grey;
+            }
+            
+            .bg-grey {
+                background-color: grey;
+            }
+            
+            .red {
+                color: black;
+                background-color: red;
+            }
+            
+            .bg-red {
+                background-color: red;
+            }
+            
+            .orange {
+                color: black;
+                background-color: orange;
+            }
+            
+            .bg-orange {
+                background-color: orange;
+            }
+            
+            .purple {
+                color: black;
+                background-color: purple;
+            }
+            
+            .bg-purple {
+                background-color: purple;
+            }
+            
+            .green {
+                color: black;
+                background-color: green;
+            }
+            
+            .bg-green {
+                background-color: green;
+            }
+           
