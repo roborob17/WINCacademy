@@ -1,11 +1,11 @@
 function menuFunction() {
-    var getMenuKleur = document.querySelector('.menuColor');
+    const getMenuKleur = document.querySelector('.menuColor');
     console.log("menuFunction = ", getMenuKleur.className);
     getMenuKleur.classList.toggle('visible');
     
 }
 
-let btnToggleNav = document.querySelector('.hamburger_icon')
+const btnToggleNav = document.querySelector('.hamburger_icon')
     btnToggleNav.addEventListener('click', function() {
     console.log("hamburger_icon: " + btnToggleNav);
     menuFunction();
@@ -13,13 +13,13 @@ let btnToggleNav = document.querySelector('.hamburger_icon')
 
 }) 
 
-let getBtnHomeGrey = document.querySelector('.home-grey');
-let getBtnRed = document.querySelector('.red');
-let getBtnOrange = document.querySelector('.orange');
-let getBtnPurple = document.querySelector('.purple');
-let getBtnGreen = document.querySelector('.green');
+const getBtnHomeGrey = document.querySelector('.home-grey');
+const getBtnRed = document.querySelector('.red');
+const getBtnOrange = document.querySelector('.orange');
+const getBtnPurple = document.querySelector('.purple');
+const getBtnGreen = document.querySelector('.green');
 
-if (getBtnHomeGrey.addEventListener('click', function() {
+getBtnHomeGrey.addEventListener('click', function() {
         console.log("getBtnHomeGrey : ", getBtnHomeGrey);
         var getBody = document.querySelector('.body');
         console.log(" hello body :", getBody);
@@ -34,9 +34,7 @@ if (getBtnHomeGrey.addEventListener('click', function() {
 
         menuFunction();
 
-    }));
-
-else if (
+    });
 
     getBtnRed.addEventListener('click', function() {
         let getBtnRed = document.querySelector('.red');
@@ -54,9 +52,8 @@ else if (
 
         menuFunction();
 
-    })); 
+    }); 
 
-else if (
 
     getBtnOrange.addEventListener('click', function() {
         let getBtnOrange = document.querySelector('.orange');
@@ -74,9 +71,7 @@ else if (
 
         menuFunction();
 
-    })); 
-
-else if (
+    }); 
 
     getBtnPurple.addEventListener('click', function() {
         let getBtnPurple = document.querySelector('.purple');
@@ -94,9 +89,7 @@ else if (
 
         menuFunction();
 
-    })); 
-
-else if (
+    }); 
 
     getBtnGreen.addEventListener('click', function() {
         let getBtnGreen = document.querySelector('.green');
@@ -114,4 +107,4 @@ else if (
 
         menuFunction();
 
-    })); 
+    }); 
