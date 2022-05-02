@@ -38,6 +38,8 @@ const createToDo = (item) => {
     deleteBtn.type= 'button';
     deleteBtn.classList.add('delete');
     deleteBtn.innerHTML = 'X'
+    //deleteBtn.classList.add("fa-solid");
+    //deleteBtn.classList.add("fa-trash-can");
 
     toDoList.insertAdjacentElement('afterbegin', form);
     // toDoList.append(form);
