@@ -35,7 +35,9 @@ const createToDo = (item) => {
     }
 
     const deleteBtn = document.createElement('i');
-    deleteBtn.classList.add('far', 'fa-trash-alt', 'todo_delete');
+    deleteBtn.type= 'button';
+    deleteBtn.classList.add('delete');
+    deleteBtn.innerHTML = 'X'
 
     toDoList.insertAdjacentElement('afterbegin', form);
     // toDoList.append(form);
@@ -79,7 +81,7 @@ toDoList.addEventListener('change', updateCheckedTodo);
 
 const deleteToDoItem = async(event) => {
     const deleteBtn = event.target;
-    if (event.target && event.target.classList.contains('todo_delete')) {
+    if (event.target && event.target.classList.contains('delete')) {
         event.target.parentNode.classList.add('delete');
         const targetID = event.target.parentNode.id;
         const data = await deleteTodo(targetID);

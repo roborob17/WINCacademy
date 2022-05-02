@@ -73,8 +73,16 @@ input[type=checkbox]:checked+label {
 }
 
 .delete {
-    display: none;
-}
+        float: right;
+        background-color: #dc143c;
+        border: none;
+        outline: none;
+        border-radius: 7px;
+        padding: 2px;
+        margin-left: 5px;
+        font-size: 0.7rem;
+        font-weight: 550;
+     }
 
 .todo_id {
     margin-bottom: 8px;

@@ -2,23 +2,19 @@ const apiUrl = "http://localhost:3000/";
 
 // GET
 export const getData = async() => {
-    try {
-        const response = await fetch(apiUrl, {
-            method: "GET",
+    try{
+        const response = await fetch (apiUrl, {
+            method: "GET", 
             headers: {
-                "Content-Type": "application/json",
-            },
+                "Content-Type": "application/json" 
+            }
         });
-        if (response.ok) {
-            console.log(response.json())
-                        return await response.json();
-                        
-                    }
-               
+        const data = await response.json();
+        return data;
     } catch (error) {
         console.log(error);
-    }
-}
+    };
+};
 
 // POST
 export const postTodo = async(data) => {
