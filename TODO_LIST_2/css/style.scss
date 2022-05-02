@@ -1,0 +1,99 @@
+@import 'variables';
+
+body {
+    background: linear-gradient(90deg, #e7eb22 0%, #1528d4 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: $color-white;
+}
+
+.container {
+    padding: 50px;
+}
+
+.todo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.todo_form {
+    width: 100%;
+    padding: 25px;
+    background-color: $color-blue;
+    border-radius: 10px;
+    border-bottom: 5px solid #bfccd6;
+    .todo_input {
+        width: 80%;
+        padding: 10px;
+    }
+    .todo_button {
+        background-color: $color-orange;
+        border: 1px solid $color-orange;
+        outline: 0;
+        border-radius: 5px;
+        padding: 8px;
+        color: $color-white;
+        &:hover {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.todo_list {
+    width: 100%;
+    padding: 25px;
+    background: $color-white;
+    box-shadow: 0 2px 2px 0 #000;
+    min-height: 100px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.todo_single {
+    color: $color-grey;
+    padding-left: 10px;
+}
+
+.fa-trash-alt {
+    padding-left: 15px;
+    float: right;
+    &:hover {
+        color: red;
+    }
+}
+
+input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+}
+
+.delete {
+    display: none;
+}
+
+.todo_id {
+    margin-bottom: 8px;
+}
+
+// All styling is mobile first
+
+// Tablet
+@media screen and (min-width: 480px) {
+    .todo_form,
+    .todo_list {
+        width: 60%;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+    .todo_form,
+    .todo_list {
+        width: 80%;
+    }
+}
