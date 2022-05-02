@@ -5,6 +5,7 @@ const formTodo = document.querySelector('.todo_form');
 const inputTodo = document.querySelector('.todo_input');
 
 const addToDoList = async() => {
+    toDoList.innerHTML = "";
     const data = await getData();
     const getTodo = data.map(item => {
         createToDo(item);
@@ -35,11 +36,11 @@ const createToDo = (item) => {
     }
 
     const deleteBtn = document.createElement('i');
-    deleteBtn.type= 'button';
-    deleteBtn.classList.add('delete');
-    deleteBtn.innerHTML = 'X'
-    //deleteBtn.classList.add("fa-solid");
-    //deleteBtn.classList.add("fa-trash-can");
+    //deleteBtn.type= 'button';
+    //deleteBtn.classList.add('delete');
+   // deleteBtn.innerHTML = 'X'
+    deleteBtn.classList.add("fa-solid");
+    deleteBtn.classList.add("fa-trash-can");
 
     toDoList.insertAdjacentElement('afterbegin', form);
     // toDoList.append(form);
@@ -83,10 +84,11 @@ toDoList.addEventListener('change', updateCheckedTodo);
 
 const deleteToDoItem = async(event) => {
     const deleteBtn = event.target;
-    if (event.target && event.target.classList.contains('delete')) {
+    if (event.target && event.target.classList.contains('fa-trash-can')) {
         event.target.parentNode.classList.add('delete');
         const targetID = event.target.parentNode.id;
-        const data = await deleteTodo(targetID);
+        await deleteTodo(targetID);
+        addToDoList()
     }
 }
 toDoList.addEventListener('click', deleteToDoItem);

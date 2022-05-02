@@ -74,12 +74,12 @@ h1 {
   padding-left: 10px;
 }
 
-.fa-trash-alt {
+.fa-trash-can {
   padding-left: 15px;
   float: right;
 }
 
-.fa-trash-alt:hover {
+.fa-trash-can:hover {
   color: red;
 }
 

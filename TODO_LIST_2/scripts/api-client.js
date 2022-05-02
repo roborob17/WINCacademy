@@ -44,9 +44,9 @@ export const deleteTodo = async(id) => {
                 "Content-Type": "application/json",
             },
         });
-        if (response.ok) {
-            return await response.json();
-        }
+        //if (response.ok) {
+          //  return await response.json();
+       // }
     } catch (error) {
         console.log(error);
     }
